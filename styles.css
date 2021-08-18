@@ -1,13 +1,12 @@
-@font-face {
-    font-family: Deluxe-paint ;
-    src: url("dpcomic.ttf");
-}
+@font-face {font-family: Montserrat; src: url("Montserrat-Regular.ttf");}
+@font-face {font-family: Montserrat; font-weight: bold; src: url("Montserrat-Bold.ttf");}
 
 * {
     box-sizing: border-box;
   }
 
 body {
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
     border: 0;
@@ -28,17 +27,124 @@ header {
     flex-shrink: 0;
 }
 
+article {
+    border: 0;
+    height: 3180px;
+}
+
+.container {
+    max-height: 60px;
+    max-width: 1270px;
+    display: flex;
+    margin: 0 auto;
+    position: static;
+    overflow: visible;
+}
+
+article .container {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #272727;
+    max-height: 4180px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.article-bot {
+    background-color: #ef8800;
+    width: 100%;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.article-top {
+    display: flex;
+    justify-content: space-between;
+    height: 2980px;
+}
+article .container .article-top .article-content {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+article .container .article-top .article-news {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 460px; 
+}
+
+.news-card-orange {
+    display: flex;
+    flex-direction: column;
+    background-color: #ef8800;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 400px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 350px;
+    color: white;
+}
+
+.link-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.link-container {
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #272727;
+    padding:5px;
+    
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}
+
+.news-card-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    height: 400px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+.news-card-white a {
+    color:inherit
+}
+
 .nav-top {
-    margin: 0;
-    padding: 0;
     border: 0;
     height: 60px;
-    
-
+    margin: 0;
+    padding: 0;
 }
 
 .nav-container {
-    background-color: #272727;;
+    background-color: #272727;
     border-bottom: 1px solid #000;
 }
 
@@ -101,17 +207,8 @@ header {
 
 }
 
-.container {
-    max-height: 60px;
-    max-width: 1270px;
-    display: flex;
-    margin: 0 auto;
-    position: static;
-    overflow: visible;
-}
-
 .logo {
-    margin-left: 10px;
+
     margin-bottom: 4px;
     margin-top: 4px;
     display: flex;
