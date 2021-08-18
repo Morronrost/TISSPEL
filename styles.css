@@ -12,7 +12,7 @@ body {
     padding: 0;
     border: 0;
     min-height: 100%;
-    background: #edeceb;
+    background: #0a0a0a;
     display: flex;
     flex-direction: column
 }
@@ -26,8 +26,6 @@ header {
     vertical-align: baseline;
     color: black;
     flex-shrink: 0;
-    
-    
 }
 
 .nav-top {
@@ -40,8 +38,8 @@ header {
 }
 
 .nav-container {
-    background-color: #f7f6f5;
-    border-bottom: 1px solid #d7d5d1;
+    background-color: #272727;;
+    border-bottom: 1px solid #000;
 }
 
 .nav-container .container {
