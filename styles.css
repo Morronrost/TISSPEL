@@ -6,12 +6,12 @@
   }
 
 body {
-    font-family: Montserrat;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
     min-height: 100%;
-    background: #0a0a0a;
+    background: black;
     display: flex;
     flex-direction: column
 }
@@ -29,7 +29,8 @@ header {
 
 article {
     border: 0;
-    height: 3180px;
+    max-height: 2180px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -46,24 +47,39 @@ article .container {
     margin-top: 20px;
     padding: 10px;
     background-color: #272727;
-    max-height: 4180px;
+    max-height: 2180px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
 .article-bot {
-    background-color: #ef8800;
+    display: flex;
     width: 100%;
-    border:1px solid black;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-top: 20px;
     height: 200px;
+}
+
+.article-bot .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    border-radius: 2px;
+    padding: 5px;
+    color: #ef8800;
+}
+
+.article-bot .about span {
+    font-size: 23px;
+    font-weight: bold;
 }
 
 .article-top {
     display: flex;
     justify-content: space-between;
-    height: 2980px;
+    max-height: 2180px;
+    min-height: 1600px;
 }
 article .container .article-top .article-content {
     background-color: white;
@@ -80,6 +96,36 @@ article .container .article-top .article-news {
     margin-right: 10px;
     width: 460px; 
 }
+.slidebox {
+    border-radius: 5px;
+    overflow: hidden;
+}
+article .container .article-top .slide {
+    background-color: white;
+    
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+article .container .article-top .slide .img-container { 
+    height: 100%;
+    overflow: hidden;
+}
+article .container .article-top .slide .textbox { 
+    padding: 10px;
+    margin-right: 5px;
+    
+    text-align: center;
+}
+article .container .article-top .slide .textbox span { 
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
 
 .news-card-orange {
     display: flex;
@@ -89,10 +135,17 @@ article .container .article-top .article-news {
     border-radius: 5px;
     height: 400px;
     margin-bottom: 20px;
+    padding-top:5px;
     padding-left: 10px;
     padding-right: 10px;
     width: 350px;
     color: white;
+}
+
+.news-card-orange span {
+    font-size: 23px;
+    font-weight: bold;
+
 }
 
 .link-container a {
@@ -102,13 +155,9 @@ article .container .article-top .article-news {
 
 .link-container {
     height: 100%;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    background-color: #272727;
-    padding:5px;
+    margin-top: 10px;
     
 }
 
@@ -135,6 +184,8 @@ article .container .article-top .article-news {
 .news-card-white a {
     color:inherit
 }
+
+
 
 .nav-top {
     border: 0;
